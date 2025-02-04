@@ -1,0 +1,21 @@
+parameters: {}
+environment:
+    USER_TOKEN: ${USER_TOKEN}
+    ICS_URL: ${ICS_URL}
+packages:
+    - name: calendar-api
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: weekly
+          binary: false
+          main: ""
+          runtime: python:3.11
+          web: true
+          webSecure: false
+          parameters: {}
+          environment: {}
+          annotations: {}
+          limits: {}
